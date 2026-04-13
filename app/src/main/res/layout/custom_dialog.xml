@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Staff Detail"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Staff ID"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/staffid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:inputType="number"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Staff Name"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/staffname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+    </TableRow>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#BE085D"
+            android:text="Cancel"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:id="@+id/btn_cancel"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#BE085D"
+            android:text="Okay"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:id="@+id/btn_okay"/>
+    </LinearLayout>
+
+</LinearLayout>

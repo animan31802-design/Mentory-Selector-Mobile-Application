@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".StaffAdvisor">
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/picker"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#BE085D"
+            android:text="PickStaff"
+            android:textSize="25sp"
+            android:enabled="false"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#855B5D49"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:id="@+id/gendertv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Gender"
+            android:textColor="#FFC107"
+            android:textSize="35sp"
+            android:textStyle="bold|italic" />
+
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2196F3"
+            android:gravity="center_horizontal"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:textAlignment="center" />
+    </TableRow>
+<TableRow
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:paddingTop="25dp"
+    android:paddingBottom="25dp"
+    android:gravity="center">
+    <Button
+        android:id="@+id/next"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BE085D"
+        android:text="NEXT ->"
+        android:textSize="25sp" />
+</TableRow>
+
+</LinearLayout>

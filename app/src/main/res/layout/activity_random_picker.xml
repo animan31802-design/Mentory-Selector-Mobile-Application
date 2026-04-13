@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg5"
+    tools:context=".RandomPicker">
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:backgroundTint="#BE085D"
+            app:maxImageSize="30dp"
+            android:enabled="false"
+            app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/rollno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textStyle="bold"
+        android:textColor="#EEFF00"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textStyle="bold"
+        android:textColor="#EEFF00"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="35dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/random"
+                    android:layout_width="80dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/bg5"
+                    android:gravity="center"
+                    android:textColor="#E370B5"
+                    android:textSize="65sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <Button
+                    android:id="@+id/generate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#BE085D"
+                    android:text="GENERATE"
+                    android:textSize="30sp"
+                    android:enabled="true"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>
